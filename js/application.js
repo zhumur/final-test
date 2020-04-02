@@ -24,7 +24,7 @@
 
     MadMath.prototype.startTime = 0;
 
-    MadMath.prototype.successMsg = ['Sweet!', 'Nice!', 'Yes!', 'Awsome!', 'Yes Oliver!'];
+    MadMath.prototype.successMsg = ['Sweet!', 'Nice!', 'Yes!', 'Awsome!', 'You got point!'];
 
     function MadMath() {
       var _this = this;
@@ -42,7 +42,7 @@
       if (direction === -1) {
         this.level--;
       } else {
-        this.level++;
+        this.level++1;
       }
       if (this.level <= 0) this.level = 1;
       $('#level').text("Level: " + this.level);
